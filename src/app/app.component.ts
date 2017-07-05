@@ -10,8 +10,12 @@ import {NgForm} from '@angular/forms';
 export class AppComponent {
   title = 'app';
 
-  onSubmit(data: NgForm){  //the word data here is inconsequential- could be anything
-  console.log(data.value)  //the word data here needs to match the above data word
-  }
+  model: object = {
+  first_name: "Bob",
+  last_name: "Smith"
+}
 
+  onSubmit(){
+    console.log(this.model)
+  }
 }
