@@ -11,9 +11,10 @@ export class AppComponent {
   title = 'app';
 
   sampleForm: NgForm;
-  @ViewChild('sampleForm') currentForm: NgForm;
+  @ViewChild('sampleForm') 
+  currentForm: NgForm;
  
-  ngAfterViewChekced(){
+  ngAfterViewChecked(){
     this.formChanged();
   }
 
@@ -51,11 +52,11 @@ export class AppComponent {
 
   validationMessages = {
     'first_name': {
-      'required':      'First name is required.',
-      'minlength':     'Name must be at least 2 characters long.'
+      'required': 'First name is required.',
+      'minlength': 'Name must be at least 2 characters long.'
     },
     'last_name': {
-      'minlength':     'Name must be at least 2 characters long.'
+      'minlength': 'Name must be at least 2 characters long.'
     }
   };
 
