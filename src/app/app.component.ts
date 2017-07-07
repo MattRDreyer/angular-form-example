@@ -10,6 +10,12 @@ import {NgForm} from '@angular/forms';
 export class AppComponent {
   title = 'app';
 
+  model: object = {
+    first_name: "Bob",
+    last_name: "Smith"
+  }
+
+
   sampleForm: NgForm;
   @ViewChild('sampleForm') 
   currentForm: NgForm;
